@@ -86,12 +86,15 @@ class HiveDb {
 
   // Private internal constructor for the singleton pattern.
   HiveDb._internal();
-
   // Method to initialize the Hive database.
-  Future<void> initializeDatabase() async {
-    final directory =
-        await getApplicationSupportDirectory(); // Get the app's directory.
-    Hive.init(directory.path); // Initialize Hive with the app's directory.
+    Future<void> initializeDatabase() async {
+//   await Hive.initFlutter();  // For mobile platforms and web platform, we need to initialize Hive.
+
+//======================================================================================================
+    // For desktop platforms, we need to initialize Hive.
+    // final directory =  await getApplicationSupportDirectory(); // Get the app's directory.
+    // Hive.init(directory.path); // Initialize Hive with the app's directory.
+//======================================================================================================
 
     // Register the Hive adapters for User, Pizza, and Invoice models.
     Hive.registerAdapter(UserAdapter());
