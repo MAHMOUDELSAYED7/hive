@@ -50,4 +50,4 @@ Future<void> main() async {
 You can easily customize the database structure by modifying the user, pizza, and invoice classes as needed. This makes `HiveDb` suitable for a variety of applications, from simple projects to more complex systems with unique data requirements.
 ## Contact
 
-For any questions or feedback, please reach out via email: [gcfjxvkj@gmail.com](gcfjxvkj@gmail.com)
+For any questions or feedback, please reach out via email: [mahmoudelsayed.dev@gmail.com](mahmoudelsayed.dev@gmail.com)
